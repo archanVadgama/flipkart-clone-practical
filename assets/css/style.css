@@ -1,0 +1,204 @@
+/* START: css variable */
+:root{
+    --theme-color: #4c74f5;
+    --body-color: rgb(243 243 243);
+}
+/* END: css variable */
+/* START: global style */
+*{
+    margin: 0px;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+/* END: global style */
+
+/* START: Custom css */
+body{
+    background-color: var(--body-color);
+}
+
+.d-flex{
+    display: flex;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.header-container{
+    flex-direction: column;
+}
+.top-header{
+    height: 60px;
+    background-color: var(--theme-color);
+}
+.categories-container{
+    text-align: center;
+    padding: 10px 150px;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: white;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.categories{
+    justify-content: space-between;
+}
+.categories, p, a{
+    color: #000;
+    text-decoration: none;
+}
+
+.container{
+    margin: 15px 150px;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+
+h3{
+    font-weight: 500;
+}
+.main-container{
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    width: 86%;
+    box-shadow: -2px -2px 8px 0 rgba(0, 0, 0, 0.2),0px -2px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 320px;
+    flex-direction: column;
+    background-color: white;
+}
+.header{
+    justify-content: space-between;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgb(202, 197, 197);
+}
+.right-side{
+    display: flex;
+    line-height: 20px;
+}
+.header-title{
+    margin: 20px;
+    width: auto;
+}
+.countdown-timer{
+    font-size: 14px;
+    margin: 20px 0px 0px 10px;
+}
+.left-side{
+    margin: 10px 20px 0px 0px;
+}
+.icon-style{
+    font-size: 20px; 
+    padding-right: 5px;
+}
+.btn{
+    background-color: var(--theme-color);
+    text-decoration: none;
+    color: white;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+}
+.view-all{
+    padding: 10px 20px;
+}
+.carousel{
+    /* box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    /* height: 260px; */
+    flex:wrap;
+    /* overflow: hidden; */
+    /* background-color: white; */
+}
+.carousel-btn{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+.carousel-btn button{
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+    background-color:white;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin-top: 4rem;
+    height: 100px;
+    width: 40px;
+}
+.left-btn{
+    position: absolute;
+    font-size: 18px;
+}
+.right-btn{
+    /* position: absolute; */
+    font-size: 18px;
+}
+.product-container{
+    /* background-color: yellow; */
+    /* display: flex;
+    flex-direction: column; */
+    margin: 10px;
+    padding: 10px;
+    min-width: 120px;
+    /* border:2px red solid; */
+}
+.product-image{
+    margin-left: 10px;
+    overflow: auto;
+    /* min-width: 100%; */
+    height: 160px;
+}
+.product-detail{
+    text-align: center;
+    /* background-color: yellow; */
+    /* line-height: 10px; */
+    /* white-space: nowrap; */
+}
+.product-title{
+    font-size: 14px;
+}
+.product-offer{
+    font-size: 12px;
+    color: green;
+}
+.product-other-info{
+    font-size: 12px;
+    color: grey;
+}
+/* .banner-image-section{
+    width: 15%;
+    background-color: white;
+} */
+.banner-image{
+    box-shadow: 0 0px 8px 4px rgba(0, 0, 0, 0.2);
+    margin-left: 10px;
+    background-color: white;
+    padding: 5px;
+    min-width: 85%;
+    height: 311px;
+    /* height: auto; */
+}
+.shop-now-container{
+    box-shadow: -2px -2px 8px 0 rgba(0, 0, 0, 0.2),0px -2px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: -7px 150px;
+    /* background-color: red; */
+}
+.shop-now{
+    width: 100%;
+    height: 340px;
+    flex-direction: column;
+    background-color: white;
+}
+.shop-now-txt{
+    font-size: 13px;
+    padding-top: -10px;
+    color: grey;
+}
+.shop-now-view-btn{
+    margin-top: 10px;
+    padding: 10px 20px;
+
+}
+/* END: Custom css */

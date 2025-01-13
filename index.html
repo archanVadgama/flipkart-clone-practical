@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart Clone</title>
+
+    <!-- jquery cdn -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- font awsome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- custom js -->
+    <script src="assets/js/script.js"></script>
+  </head>
+
+  <body>
+    <!-- START: header section -->
+     <header class="header-container d-flex">
+        <div class="top-header">
+
+        </div>
+        <div class="categories-container">
+            <div class="categories">
+              <a href="javascript:void(0);" class="categories-name">
+                <img src="assets/images/categories/top-offers.webp" alt="Top Offers" class="categories-image">
+                <p>Top Offers</p>
+              </a>
+            </div>
+            <div class="categories">
+              <a href="javascript:void(0);" class="categories-name">
+                <img src="assets/images/categories/grocery.webp" alt="Grocery" class="categories-image">
+                <p>Grocery</p>
+              </a>
+            </div>
+            <div class="categories">
+                <a href="javascript:void(0);" class="categories-name">
+                  <img src="assets/images/categories/mobile.webp" alt="Mobiles" class="categories-image">
+                  <p>Mobiles</p>
+                </a>
+            </div>
+            <div class="categories">
+                <a href="javascript:void(0);" class="categories-name">
+                  <img src="assets/images/categories/fashion.webp" alt="Fashion" class="categories-image">
+                  <p>Fashion</p>
+                </a>
+            </div>
+            <div class="categories">
+                <a href="javascript:void(0);" class="categories-name">
+                  <img src="assets/images/categories/electronics.webp" alt="Electronics" class="categories-image">
+                  <p>Electronics</p>
+                </a>
+            </div>
+            <div class="categories">
+                <a href="javascript:void(0);" class="categories-name">
+                  <img src="assets/images/categories/home.webp" alt="Home" class="categories-image">
+                  <p>Home</p>
+                </a>
+            </div>
+            <div class="categories">
+                <a href="javascript:void(0);" class="categories-name">
+                  <img src="assets/images/categories/appliances.webp" alt="Appliances" class="categories-image">
+                  <p>Appliances</p>
+                </a>
+            </div>
+            <div class="categories">
+                <a href="javascript:void(0);" class="categories-name">
+                  <img src="assets/images/categories/travel.webp" alt="Travel" class="categories-image">
+                  <p>Travel</p>
+                </a>
+            </div>
+            <div class="categories">
+                <a href="javascript:void(0);" class="categories-name">
+                  <img src="assets/images/categories/beauty.webp" alt="Beauty" class="categories-image">
+                  <p>Beauty</p>
+                </a>
+            </div>
+        </div>
+     </header>
+    <!-- END: header section -->
+    
+    <!-- START: deals of the day  -->
+    <section class="d-flex justify-content-center container">
+      <div class="main-container">
+        <div class="d-flex header">
+          <div class="right-side">
+            <h3 class="header-title">Deals of the Day</h3>
+            <div class="countdown-timer">
+                <i class="fa-solid fa-stopwatch icon-style" ></i>
+                <span class="timer">-- : -- : --</span>
+            </div>
+          </div>
+          <div class="left-side">
+            <button class="btn view-all">VIEW ALL</button>
+          </div>
+        </div>
+        <div class="carousel-btn">
+          <button class="left-btn">
+            <i class="fa-solid fa-less-than"></i>
+          </button>
+            <!-- START: product carousel section -->
+            <div id="sldie-carousel" class="d-flex carousel">
+              <div class="product-container">
+                <img
+                  src="assets/images/products/flipkart_1.webp"
+                  alt="Deal"
+                  class="product-image"
+                />
+                <div class="product-detail">
+                  <p class="product-title">Demo Title</p>
+                  <p class="product-offer">Demo Offer</p>
+                  <p class="product-other-info">Other information</p>
+                </div>
+              </div>
+              <div class="product-container">
+                <img
+                  src="assets/images/products/flipkart_1.webp"
+                  alt="Deal"
+                  class="product-image"
+                />
+                <div class="product-detail">
+                  <p class="product-title">Demo Title</p>
+                  <p class="product-offer">Demo Offer</p>
+                  <p class="product-other-info">Other information</p>
+                </div>
+              </div>
+              <div class="product-container">
+                <img
+                  src="assets/images/products/flipkart_1.webp"
+                  alt="Deal"
+                  class="product-image"
+                />
+                <div class="product-detail">
+                  <p class="product-title">Demo Title</p>
+                  <p class="product-offer">Demo Offer</p>
+                  <p class="product-other-info">Other information</p>
+                </div>
+              </div>
+              <div class="product-container">
+                <img
+                  src="assets/images/products/flipkart_1.webp"
+                  alt="Deal"
+                  class="product-image"
+                />
+                <div class="product-detail">
+                  <p class="product-title">Demo Title</p>
+                  <p class="product-offer">Demo Offer</p>
+                  <p class="product-other-info">Other information</p>
+                </div>
+              </div>
+              <div class="product-container">
+                <img
+                  src="assets/images/products/flipkart_1.webp"
+                  alt="Deal"
+                  class="product-image"
+                />
+                <div class="product-detail">
+                  <p class="product-title">Demo Title</p>
+                  <p class="product-offer">Demo Offer</p>
+                  <p class="product-other-info">Other information</p>
+                </div>
+              </div>
+              <div class="product-container">
+                <img
+                  src="assets/images/products/flipkart_1.webp"
+                  alt="Deal"
+                  class="product-image"
+                />
+                <div class="product-detail">
+                  <p class="product-title">Demo Title</p>
+                  <p class="product-offer">Demo Offer</p>
+                  <p class="product-other-info">Other information</p>
+                </div>
+              </div>
+              <div class="product-container">
+                <img
+                  src="assets/images/products/flipkart_1.webp"
+                  alt="Deal"
+                  class="product-image"
+                />
+                <div class="product-detail">
+                  <p class="product-title">Demo Title</p>
+                  <p class="product-offer">Demo Offer</p>
+                  <p class="product-other-info">Other information</p>
+                </div>
+              </div>
+              <div class="product-container">
+                <img
+                  src="assets/images/products/flipkart_1.webp"
+                  alt="Deal"
+                  class="product-image"
+                />
+                <div class="product-detail">
+                  <p class="product-title">Demo Title</p>
+                  <p class="product-offer">Demo Offer</p>
+                  <p class="product-other-info">Other informationwww</p>
+                </div>
+              </div>
+              <div class="product-container">
+                <img
+                  src="assets/images/products/flipkart_4.webp"
+                  alt="Deal"
+                  class="product-image"
+                />
+                <div class="product-detail">
+                  <p class="product-title">asdDemo Title</p>
+                  <p class="product-offer">Demo Offer</p>
+                  <p class="product-other-info">Other informataion</p>
+                </div>
+              </div>
+            </div>
+            <!-- END: product carousel section -->
+          <button class="right-btn">
+            <i class="fa-solid fa-greater-than"></i>
+          </button>
+        </div>
+      </div>
+      <div class="banner-image-section">
+        <img
+          class="banner-image"
+          src="assets/images/banner/banner_image.png"
+          alt="Bannner Image"
+        />
+      </div>
+    </section>
+    <!-- END: deals of the day  -->
+
+    <!-- START: shop now section  -->
+    <section class="d-flex justify-content-center shop-now-container">
+      <div class="shop-now">
+        <div class="d-flex header">
+          <div class="right-side">
+            <h3 class="header-title">
+              Books And Music Instruments<br />
+              <span class="shop-now-txt">Shop Now!</span>
+            </h3>
+          </div>
+          <div class="left-side">
+            <button class="btn shop-now-view-btn">VIEW ALL</button>
+          </div>
+        </div>
+        <div class="d-flex carousel">
+          <div class="product-container">
+            <img
+              src="assets/images/products/flipkart_1.webp"
+              alt="Deal"
+              class="product-image"
+            />
+            <div class="product-detail">
+              <p class="product-title">Demo Title</p>
+              <p class="product-offer">Demo Offer</p>
+              <p class="product-other-info">Other information</p>
+            </div>
+          </div>
+          <div class="product-container">
+            <img
+              src="assets/images/products/flipkart_1.webp"
+              alt="Deal"
+              class="product-image"
+            />
+            <div class="product-detail">
+              <p class="product-title">Demo Title</p>
+              <p class="product-offer">Demo Offer</p>
+              <p class="product-other-info">Other information</p>
+            </div>
+          </div>
+          <div class="product-container">
+            <img
+              src="assets/images/products/flipkart_1.webp"
+              alt="Deal"
+              class="product-image"
+            />
+            <div class="product-detail">
+              <p class="product-title">Demo Title</p>
+              <p class="product-offer">Demo Offer</p>
+              <p class="product-other-info">Other information</p>
+            </div>
+          </div>
+          <div class="product-container">
+            <img
+              src="assets/images/products/flipkart_1.webp"
+              alt="Deal"
+              class="product-image"
+            />
+            <div class="product-detail">
+              <p class="product-title">Demo Title</p>
+              <p class="product-offer">Demo Offer</p>
+              <p class="product-other-info">Other information</p>
+            </div>
+          </div>
+          <div class="product-container">
+            <img
+              src="assets/images/products/flipkart_1.webp"
+              alt="Deal"
+              class="product-image"
+            />
+            <div class="product-detail">
+              <p class="product-title">Demo Title</p>
+              <p class="product-offer">Demo Offer</p>
+              <p class="product-other-info">Other information</p>
+            </div>
+          </div>
+          <div class="product-container">
+            <img
+              src="assets/images/products/flipkart_1.webp"
+              alt="Deal"
+              class="product-image"
+            />
+            <div class="product-detail">
+              <p class="product-title">Demo Title</p>
+              <p class="product-offer">Demo Offer</p>
+              <p class="product-other-info">Other information</p>
+            </div>
+          </div>
+          <div class="product-container">
+            <img
+              src="assets/images/products/flipkart_1.webp"
+              alt="Deal"
+              class="product-image"
+            />
+            <div class="product-detail">
+              <p class="product-title">Demo Title</p>
+              <p class="product-offer">Demo Offer</p>
+              <p class="product-other-info">Other information</p>
+            </div>
+          </div>
+          <div class="product-container">
+            <img
+              src="assets/images/products/flipkart_1.webp"
+              alt="Deal"
+              class="product-image"
+            />
+            <div class="product-detail">
+              <p class="product-title">Demo Title</p>
+              <p class="product-offer">Demo Offer</p>
+              <p class="product-other-info">Other information</p>
+            </div>
+          </div>
+          <div class="product-container">
+            <img
+              src="assets/images/products/flipkart_4.webp"
+              alt="Deal"
+              class="product-image"
+            />
+            <div class="product-detail">
+              <p class="product-title">Demo Title</p>
+              <p class="product-offer">Demo Offer</p>
+              <p class="product-other-info">Other information</p>
+            </div>
+          </div>
+          <div class="product-container">
+            <img
+              src="assets/images/products/flipkart_1.webp"
+              alt="Deal"
+              class="product-image"
+            />
+            <div class="product-detail">
+              <p class="product-title">Demo Title</p>
+              <p class="product-offer">Demo Offer</p>
+              <p class="product-other-info">Other information</p>
+            </div>
+          </div>
+          <div class="product-container">
+            <img
+              src="assets/images/products/flipkart_1.webp"
+              alt="Deal"
+              class="product-image"
+            />
+            <div class="product-detail">
+              <p class="product-title">Demo Title</p>
+              <p class="product-offer">Demo Offer</p>
+              <p class="product-other-info">Other information</p>
+            </div>
+          </div>
+          <div class="product-container">
+            <img
+              src="assets/images/products/flipkart_4.webp"
+              alt="Deal"
+              class="product-image"
+            />
+            <div class="product-detail">
+              <p class="product-title">Demo Title</p>
+              <p class="product-offer">Demo Offer</p>
+              <p class="product-other-info">Other information</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END: shop now section  -->
+  </body>
+</html>
