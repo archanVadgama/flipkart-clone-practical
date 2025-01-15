@@ -1,8 +1,41 @@
 $(document).ready(function () {
+  
   $(".btn").click(function (e) {
     e.preventDefault();
     alert("Button clicked");
   });
+
+  $('.more').hover(function () {
+      $('.more-section').css('display', 'block');
+    }, function () {
+      $('.more-section').css('display', 'none');
+    }
+  );
+  $('.more-items').hover(function () {
+      $('.more-section').css('display', 'block');
+    }, function () {
+      $('.more-section').css('display', 'none');
+    }
+  );
+
+  const WIDTH = window.innerWidth;
+  // console.log(WIDTH);
+  if (WIDTH <= 425) {
+    $('.right-btn').hide();
+    let count = 1;
+    let carouselInterval = setInterval(function () {
+      // console.log(count);
+      if(count == 4){
+        $('#sldie-carousel').css('transform', 'translateX(0px)');
+        count = 1;
+        // console.log(test);
+      }else{
+        $('.res-carousel').css('transform', 'translateX(-'+(count * 420)+'px)');
+        $('#sldie-carousel').css('transform', 'translateX(-'+(count * 420)+'px)');
+        count++;
+      }
+      }, 3000);
+    }
   
   //countdown timer script
   let currentDate = new Date();
@@ -24,18 +57,21 @@ $(document).ready(function () {
 
 
   //carousel script
-  $('.right-btn').click(function (e) { 
-    e.preventDefault();
-    $('#sldie-carousel').css({
-        "transform": "translateX(-150px)",
-        "transition": "transform 0.5s ease-in-out"
-    });
+  $('.right-btn').click(function () {
+    $(this).hide();
+    $('.left-btn').show();
+    
+    if(WIDTH <= 1440){
+      $('#sldie-carousel').css('transform', `translateX(-920px)`);
+    }else{
+      $('#sldie-carousel').css('transform', `translateX(-670px)`);
+    }
   });
-  $('.left-btn').click(function (e) { 
-    e.preventDefault();
-    $('#sldie-carousel').css({
-        "transform": "translateX(0px)",
-        "transition": "transform 0.5s ease-in-out"
-    });
+  
+  $('.left-btn').click(function () {
+    $(this).hide();
+    $('.right-btn').show();
+    $('#sldie-carousel').css('transform', `translateX(0px)`);
   });
+
 });
